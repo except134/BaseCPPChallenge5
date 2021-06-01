@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,10 +18,13 @@ public:
 
 private slots:
     void on_btnTask1Calc_clicked();
-
-    void on_edParamD_editingFinished();
+    void on_btnTask2Calc_clicked();
+    void Task3();
+    void on_btnTask3Calc_clicked();
 
 private:
     Ui::MainWindow *ui;
+    int myArray[3][3][3]{};
+    int* ptrArray=nullptr;
 };
 #endif // MAINWINDOW_H

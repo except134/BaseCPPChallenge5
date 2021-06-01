@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    Task3();
 }
 
 MainWindow::~MainWindow()
@@ -16,12 +18,44 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnTask1Calc_clicked()
 {
-
+    int a=ui->edParamA->text().toInt();
+    int b=ui->edParamB->text().toInt();
+    int c=ui->edParamC->text().toInt();
+    int d=ui->edParamD->text().toInt();
+    float result=static_cast<float>(a*(b+(c/d)));
+    ui->edTask1Result->setText(QString().setNum(result, 'f'));
 }
 
 
-void MainWindow::on_edParamD_editingFinished()
+
+void MainWindow::on_btnTask2Calc_clicked()
 {
-    if(edParamD->)
+    int a = ui->edParamInt->text().toInt();
+    int b =  a <= 21 ? 21 - a : (a - 21) << 1;
+
+    ui->edTask2Result->setText(QString().setNum(b));
+}
+
+void MainWindow::Task3()
+{
+    ptrArray = &myArray[0][0][0];
+
+    for(int x=0;x<3;x++) {
+        for(int y=0;y<3;y++) {
+            QTableWidgetItem *itm = new QTableWidgetItem(QString().setNum(*(ptrArray++)));
+            ui->grdMatrix->setItem(y, x, itm);
+        }
+    }
+
+    ui->grdMatrix->update();
+}
+
+void MainWindow::on_btnTask3Calc_clicked()
+{
+    ptrArray = &myArray[0][0][0];
+    int var=ui->edParam111->text().toInt();
+    *(ptrArray + sizeof(int))=var;
+
+    Task3();
 }
 

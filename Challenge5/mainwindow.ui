@@ -18,31 +18,37 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
-      <width>111</width>
+      <y>40</y>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>Введите параметр 'a'</string>
     </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QLineEdit" name="edParamA">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>20</y>
+      <x>160</x>
+      <y>40</y>
       <width>113</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="inputMask">
+     <string>D9999999</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblParamB">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>50</y>
-      <width>111</width>
+      <y>70</y>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -53,19 +59,22 @@
    <widget class="QLineEdit" name="edParamB">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>50</y>
+      <x>160</x>
+      <y>70</y>
       <width>113</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="inputMask">
+     <string>D9999999</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblParamC">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>80</y>
-      <width>111</width>
+      <y>100</y>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -76,19 +85,22 @@
    <widget class="QLineEdit" name="edParamC">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>80</y>
+      <x>160</x>
+      <y>100</y>
       <width>113</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="inputMask">
+     <string>D9999999</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblParamD">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>110</y>
-      <width>111</width>
+      <y>130</y>
+      <width>120</width>
       <height>16</height>
      </rect>
     </property>
@@ -99,18 +111,21 @@
    <widget class="QLineEdit" name="edParamD">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>110</y>
+      <x>160</x>
+      <y>130</y>
       <width>113</width>
       <height>21</height>
      </rect>
+    </property>
+    <property name="inputMask">
+     <string>D9999999</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnTask1Calc">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>140</y>
+      <y>160</y>
       <width>231</width>
       <height>22</height>
      </rect>
@@ -123,7 +138,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>180</y>
+      <y>200</y>
       <width>451</width>
       <height>16</height>
      </rect>
@@ -135,8 +150,8 @@
    <widget class="Line" name="line_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>20</y>
+      <x>280</x>
+      <y>40</y>
       <width>16</width>
       <height>168</height>
      </rect>
@@ -148,8 +163,8 @@
    <widget class="QLabel" name="lblFormula">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>20</y>
+      <x>300</x>
+      <y>40</y>
       <width>131</width>
       <height>16</height>
      </rect>
@@ -158,11 +173,11 @@
      <string>Формула: a* (b + (c/d))</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lblResult">
+   <widget class="QLabel" name="lblTask1Result">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>50</y>
+      <x>300</x>
+      <y>70</y>
       <width>61</width>
       <height>16</height>
      </rect>
@@ -174,13 +189,263 @@
    <widget class="QLineEdit" name="edTask1Result">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>50</y>
+      <x>370</x>
+      <y>70</y>
       <width>113</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
    </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Задача 1</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>481</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Задача 2</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QLineEdit" name="edParamInt">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>D9999999</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblParamInt">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>120</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите целое число</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>20</y>
+       <width>16</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edTask2Result">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>30</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTask2Result">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>30</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Результат:</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>92</y>
+       <width>451</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTask2Calc">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>231</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Расчитать задачу 2</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>481</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Задача 3</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <widget class="QTableWidget" name="grdMatrix">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>121</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>28</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLabel" name="lblGrdEnter">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>251</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Введите целое число для ячейки [1][1][1]</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edParam111">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>50</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="inputMask">
+      <string>99999999</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTask3Calc">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>80</y>
+       <width>231</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Расчитать задачу 3</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>edParamA</zorder>
+   <zorder>edParamB</zorder>
+   <zorder>edParamC</zorder>
+   <zorder>edParamD</zorder>
+   <zorder>btnTask1Calc</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>lblFormula</zorder>
+   <zorder>lblTask1Result</zorder>
+   <zorder>edTask1Result</zorder>
+   <zorder>lblParamD</zorder>
+   <zorder>lblParamB</zorder>
+   <zorder>lblParamA</zorder>
+   <zorder>lblParamC</zorder>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
