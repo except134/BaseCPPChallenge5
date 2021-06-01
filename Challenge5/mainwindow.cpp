@@ -22,7 +22,7 @@ void MainWindow::on_btnTask1Calc_clicked()
     int b=ui->edParamB->text().toInt();
     int c=ui->edParamC->text().toInt();
     int d=ui->edParamD->text().toInt();
-    float result=static_cast<float>(a*(b+(c/d)));
+    float result=a*(b+(static_cast<float>(c)/d));
     ui->edTask1Result->setText(QString().setNum(result, 'f'));
 }
 
